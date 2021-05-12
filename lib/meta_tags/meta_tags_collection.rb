@@ -149,7 +149,7 @@ module MetaTags
         # noindex has higher priority than index
         [:noindex, :index],
         # follow has higher priority than nofollow
-        [:follow, :nofollow],
+        [:all, :follow, :nofollow]
         :noarchive,
       ].each do |attributes|
         calculate_robots_attributes(result, attributes)
